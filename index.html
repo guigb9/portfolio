@@ -12,17 +12,17 @@
     <title>Guilherme Barboza</title>
 </head>
 <body>
-    <div class="scroll-container"> 
+    <section class="scroll-container"> 
         <div class="scroll-area home-style">
             <nav>
                 <ul>
-                    <li>HOME</li>
-                    <li>FORMAÇÃO</li>
-                    <li>EXPERIÊNCIA</li>
-                    <li>SOBRE</li>
+                    <li name="buttonGoTo" data-target="homeSection">HOME</li>
+                    <li name="buttonGoTo" data-target="trainingSection">FORMAÇÃO</li>
+                    <li name="buttonGoTo" data-target="experienceSection">EXPERIÊNCIA</li>
+                    <li name="buttonGoTo" data-target="aboutSection">SOBRE</li>
                 </ul>
             </nav>
-            <section class="presentation">
+            <section class="presentation" id="homeSection">
                 <div class="line"></div>
                 <div class="presentation-slogan">
                         <p>
@@ -51,25 +51,22 @@
             <div class="purple-line-footer">
             </div>
         </div>
-        <div class="scroll-area training">
+        <section class="scroll-area training" id="trainingSection">
             <div class="main-title">
                 <div class="line"></div>
                 <p>Formação</p>
             </div>
             <section class="courses">
-                <div class="course-title">
-                    <p>Análise e Desenvolvimento de Sistemas - <span class="place">SPTech School</span></p>
+                <div class="course-title" id="courseTitle">
+                    
                 </div>
-                <div class="course-description">
-                    <p>
-                        Ensino Superior Completo no ano de 2021 carregando alguns projetos ao longo do caminho e trazendo 2 experiências profissionais distintas durante o processo de formação.
-                        Carrego comigo o aprendizado de diversas tecnologias e um projeto de TCC fora da curva de um e-commerce de compra venda e troca de artigos no ramo de vestuário chamado HyperXpress
-                    </p>
+                <div class="course-description" id="courseDescription">
+                    
                 </div>
             </section>
             <div class="timeline">
                 <div class="timeline-with-no-baseline">
-                    <div class="course-card">
+                    <div class="course-card" name="trainingButton" course-id="1">
                         <div class="timeline-division">
                         </div>
                         <div class="course-detail">
@@ -78,7 +75,7 @@
                             <p>Técnico em Mecatrônica</p>
                         </div>
                     </div>
-                    <div class="course-card">
+                    <div class="course-card" name="trainingButton" course-id="2">
                         <div class="timeline-division">
                         </div>
                         <div class="course-detail">
@@ -88,7 +85,7 @@
                         </div>
                          
                     </div>
-                    <div class="course-card">
+                    <div class="course-card" name="trainingButton" course-id="3">
                         <div class="timeline-division">
                         </div>
                         <div class="course-detail">
@@ -99,38 +96,31 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-area professional-xp">
+        </section>
+        <section class="scroll-area professional-xp" id="experienceSection">
             <div class="professional-xp-title">
                 <div class="line"></div>
                 <p>Experiências Profissionais</p>
             </div>
             <section class="companies">
                 <div class="menu">
-                    <div class="company-icon">
+                    <div class="company-icon" name="buttonChangeCompany" company-id=1>
                         <img src="assets/img/tivit-icon.png" alt="">
                     </div>
-                    <div class="company-icon">
+                    <div class="company-icon" name="buttonChangeCompany" company-id="2">
                         <img src="assets/svg/Logo.svg" alt="">
                     </div>
-                    <div class="company-icon">
+                    <div class="company-icon" name="buttonChangeCompany" company-id="3">
                         <img src="assets/img/cap-icon.png" alt="">
                     </div>
-                    <div class="company-icon">
+                    <div class="company-icon" name="buttonChangeCompany" company-id="4">
                         <img src="assets/img/act-icon.webp" alt="">
                     </div>
                 </div>
                 <section class="company-sec">
-                        <div class="title">
-                            <p>
-                                    TIVIT
-                            </p>
+                        <div class="title" id="companyTitle">
                         </div>
-                        <div class="info">
-                            <p>
-                                Analista de Suporte de TI – Estágio - Responsável pelo atendimento e resolução de chamados do ERP SAP, SAP IS-MEDIA e sistemas legados de primeiro e segundo nível.
-                                Realização de consultas, validações e alterações em bases de dados (Oracle e SQL Server) com objetivo de resolver incidentes e solicitações.
-                            </p>
+                        <div class="info" id="companyInfo">
                         </div>
                 </section>
             </section>
@@ -190,8 +180,8 @@
                     <img src="assets/img/sql-server.png">
                 </div>
             </section>
-        </div>
-        <div class="scroll-area about-me">
+        </section>
+        <section class="scroll-area about-me" id="aboutSection">
             <section class="personal-info">
                 <div class="about-title">
                     <div class="line"></div>
@@ -216,8 +206,8 @@
             <div class="my-img">
                 <img src="assets/img/guilherme.jpeg" alt="minha foto pessoal">
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
     <script src="js/index.js">
     </script>
 </body>
