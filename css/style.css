@@ -326,5 +326,71 @@ html ::-webkit-scrollbar-track {
     width: 4.5vw; 
 }
 
+.place {
+    color: #5D5AE8;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(80% - 5px);
+    margin: auto;
+}
+.about-me .about-title .line {
+    height: 80px !important;
+}
+
+.info .title {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.about-me .about-title {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #F5F5F5;
+    margin-top: 5vh;
+    align-items: center;
+}
 
 
+.info .social-media {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #c6c6c6;
+}
+
+.about-me .social-media-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me .social-media-container a {
+    margin-top: 1vh;
+}
+
+.about-me .personal-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.my-img img {
+    width: 350px;
+}
+
+.my-img {
+    margin-top: 8vh;
+}
+
+.about-title {
+    width: 50%;
+}
