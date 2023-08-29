@@ -1,0 +1,232 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.scroll-container,
+.scroll-area {
+    margin: 0 auto;
+}
+
+.scroll-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+}
+
+.scroll-area {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.home-style {
+    display: grid;
+    grid-template-rows: 250px 0.9fr 1fr;
+}
+
+.home-style nav {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: auto;
+    margin-top: 25px;
+    color: #F5F5F5;
+}
+
+.home-style nav ul li:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.presentation {
+    margin-left: 10%;
+    line-height: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.presentation .presentation-text {
+    display: none;
+}
+
+
+.presentation .presentation-slogan {
+    color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.presentation .presentation-slogan span {
+    color: #5D5AE8;
+    font-size: 40px;
+}
+
+.projects {
+    margin-left: 10%;
+}
+
+.home-style nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.home-style nav ul li {
+    padding: 40px;
+}
+
+.home-style .projects p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #ECECFF;
+}
+
+.projects-buttons button {
+    padding: 15px 20px;
+    margin-right: 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+.projects-buttons button a:link {
+    text-decoration:none;
+}
+.projects-buttons button a:visited {
+    text-decoration:none;
+}
+.projects-buttons button a:hover {
+    text-decoration:none;
+}
+
+.projects-buttons button a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    text-decoration:none;
+}
+
+.home-style .purple-line-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #5D5AE8;
+}
+
+.line {
+    background: rgb(236,236,255);
+    background: linear-gradient(0deg, rgba(236,236,255,1) 0%, rgba(93,90,232,1) 100%);
+    height: 23vh;
+    margin-right: 1.5vw;
+    width: 5px;
+}
+
+.training {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+}
+
+.training .baseline {
+    width: 90%;
+    height: 10px;
+    margin: auto;
+    background-color: #f5f5f5;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.course-card .timeline-division {
+    width: 5px;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(236,236,255,1) 0%, rgba(93,90,232,1) 100%);
+}
+
+
+.timeline-with-no-baseline {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: calc(80% - 5px);
+    margin: auto;
+}
+
+.course-detail {
+    font-family: 'Poppins', sans-serif;
+    color: #F5F5F5;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: small;
+}
+
+.course-detail p {
+    margin: 0px;
+    margin-bottom: 1.5px;
+}
+
+.course-detail img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.courses .course-title p {
+    font-family: 'Poppins', sans-serif;
+    color: #ECECFF;
+    font-size: 30px;
+}
+
+.courses {
+    width: calc(80% - 5px);
+    margin: auto;
+}
+
+.courses .course-description {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #c6c6c6;
+    line-height: 5vh;
+}
+
+.course-card:hover {
+    scale: 1.5;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.training .main-title {
+    width: calc(80% - 5px);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #F5F5F5;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.main-title .line {
+    height: 80px !important;
+}
+
+.main-title p {
+    height: calc(100% - 40px);
+}
