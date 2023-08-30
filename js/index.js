@@ -83,8 +83,8 @@ const companies = [
     {
         id: 2,
         name: 'HyperXpress Project',
-        text: 'Desenvolvedor full-stack – Autônomo - Projeto de desenvolvimento E- commerce responsável por troca e venda de artigos no ramo de vestuário.'+
-        'Atuei como Desenvolvedor full-stack neste projeto realizando desenvolvimento de novas funcionalidades destinadas ao negócio utilizando as tecnologias: Spring Framework, Java 8, Git, Github, MVC , S.O.L.I.D, Microsoft Azure, Amazon AWS, SQL Server, Jenkins, ReactJS, NGINX, Android.',
+        text: 'Desenvolvedor full-stack – Autônomo - Projeto de desenvolvimento E- commerce responsável por troca e venda de artigos no ramo de vestuário. '+
+        'Atuei como Desenvolvedor neste projeto realizando desenvolvimento de novas funcionalidades destinadas ao negócio utilizando as tecnologias: Spring Framework, Java 8, Git, Github, MVC , S.O.L.I.D, Microsoft Azure, Amazon AWS, SQL Server, Jenkins, ReactJS, NGINX, Android.',
         year: '2021'
     },
     {
@@ -106,7 +106,7 @@ const courses = [
     {
         id: 1,
         name: 'Mecatrônica',
-        text: 'Curso Técnico em Mecatrônica realizado integrado ao Ensino Médio que me apresentou a tecnologia como carreira. A matéria de programação envolvia Linguagem C e C++ e Assembly associados a programação de microcontroladores como Arduino. Ganhamos premiação como melhor projeto de TCC uma cervejeira artesanal automatizada, onde foi necessário conhecimento em Raspberry que foi o que utilizamos para fazer todo o seu controle desde a temperatura ideal para fazer cerveja até o tempo de cozimento para cada tipo de preparo.',
+        text: 'Curso Técnico em Mecatrônica realizado integrado ao Ensino Médio que me apresentou a tecnologia como carreira. A matéria de programação envolvia Linguagem C e C++ e Assembly associados a programação de microcontroladores como Arduino. Ganhamos premiação como melhor projeto de TCC, uma cervejeira artesanal automatizada, onde foi necessário conhecimento em Raspberry.  Foi a tecnologia utilizada para fazer todo o seu controle desde a temperatura ideal para fazer cerveja até o tempo de cozimento para cada tipo de preparo.',
         year: '2016 - 2018',
         local: 'ETEC Jorge Street'
     },

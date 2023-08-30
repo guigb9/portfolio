@@ -24,9 +24,11 @@ html ::-webkit-scrollbar-track {
 }
 
 .scroll-container {
+    scroll-behavior: smooth;
     overflow: auto;
     scroll-snap-type: y mandatory;
     height: 100vh;
+    overscroll-behavior-y: initial;
 }
 
 .scroll-area {
@@ -274,7 +276,7 @@ html ::-webkit-scrollbar-track {
 .professional-xp .companies .menu {
     height: 30vh;
     width: 5vw;
-    background-color: rgba(236,236,255, 0.8);
+    background-color: rgba(236,236,255);
     margin: auto auto auto 0;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -285,6 +287,7 @@ html ::-webkit-scrollbar-track {
     display: flex;
     align-items: center;
     flex-direction: row;
+    border-radius: 0px 15px 15px 0px;
 }
 
 
@@ -294,10 +297,9 @@ html ::-webkit-scrollbar-track {
 }
 
 .professional-xp .companies .menu .company-icon:hover {
-    background-color: rgba(236,236,255, 0.3);
+    background-color: rgba(93,90,232,0.3);
     transition: .3s;
     cursor: pointer;
-    border-radius: 0px 15px 15px 0px;
 }
 
 
