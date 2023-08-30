@@ -8,14 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
     <title>Guilherme Barboza</title>
     <link rel="shortcut icon" href="assets/svg/g.svg" type="image/x-icon">
 </head>
 <body>
     <section class="scroll-container"> 
         <div class="scroll-area home-style">
-            <nav>
+            <nav class="menu">
+                <input type="checkbox" class="menu-fake-trigger">
+                <div class="menu-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul>
                     <li name="buttonGoTo" data-target="homeSection">HOME</li>
                     <li name="buttonGoTo" data-target="trainingSection">FORMAÇÃO</li>
@@ -94,7 +99,7 @@
                 <p>Experiências Profissionais</p>
             </div>
             <section class="companies">
-                <div class="menu">
+                <div class="companies-menu">
                     <div class="company-icon" name="buttonChangeCompany" company-id=1>
                         <img src="assets/img/tivit-icon.png" alt="">
                     </div>
