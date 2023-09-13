@@ -275,31 +275,58 @@ html ::-webkit-scrollbar-track {
 
 .professional-xp .companies .companies-menu {
     height: 30vh;
-    width: 5vw;
+    width: 2vw;
     background-color: rgba(236,236,255);
-    margin: auto auto auto 0;
+    margin: auto auto auto 0vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: 0px 15px 15px 0px;
+    min-width: 25px;
+}
+.professional-xp .companies .company-icon {
+    height: calc(30vh / 4);
+    width: 2vw;
+    background-color: rgba(236,236,255);
+    margin: auto auto auto 0vw;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     border-radius: 0px 15px 15px 0px;
 }
 
 .professional-xp .companies .companies-menu .company-icon {
+    z-index: 999;
     display: flex;
     align-items: center;
     flex-direction: row;
     border-radius: 0px 15px 15px 0px;
 }
 
-
-.professional-xp .companies .companies-menu .company-icon img {
-    width: 3.5vw;
-    margin-left: .75vw
-}
-
 .professional-xp .companies .companies-menu .company-icon:hover {
-    background-color: rgba(93,90,232,0.3);
+    background-color: var(--title-font-color);
     transition: .3s;
     cursor: pointer;
+    width: 80px;
+}
+
+.professional-xp .companies .companies-menu .company-icon .img-empresa {
+    display: none;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.professional-xp .companies .companies-menu .company-icon .img-seta {
+    display: block !important;
+    width: 1.5vw;
+    margin: auto;
+    min-width: 15px !important;
+}
+
+.professional-xp .companies .companies-menu .company-icon:hover .img-empresa {
+    display: block !important;
+}
+
+.professional-xp .companies .companies-menu .company-icon:hover .img-seta {
+    display: none !important;
 }
 
 
@@ -315,17 +342,16 @@ html ::-webkit-scrollbar-track {
 }
 
 
-.carrousel-img {
-    padding: 10px;
-    margin-right: 2vw;
+.carrousel-xp .carrousel-img {
+    width: var(--icon-width-mult);
     scroll-snap-align: start;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-.carrousel-img img {
-    width: 4.5vw; 
+.carrousel-xp .carrousel-img img {
+    width: 80%;
 }
 
 .place {
@@ -404,3 +430,15 @@ html ::-webkit-scrollbar-track {
 .menu .menu-lines {
     display: none;
 }
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+}
+
+.course-card .course-detail {
+    display: flex !important;
+    align-items: center !important;
+}
+

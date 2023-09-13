@@ -12,4 +12,42 @@
     --medium-font-size: 24px;
     --big-font-size: 30px;
     --bigger-font-size: 40px;
+    --icon-width-mult: 10%;
+}
+
+@media only screen and (max-device-width: 900px) {
+    :root {
+        --bigger-font-size: 35px;
+        --big-font-size: 25px;
+        --medium-font-size: 19px;
+        --smalll-font-size: 15px;
+        --smaller-font-size:13px;
+    }
+
+    .training {
+        grid-template-rows: 150px 1fr 1fr !important;
+    }
+
+    .course-description {
+        height: 30vh;
+        overflow-y: scroll;
+    }
+    .course-card:hover {
+        scale: 1.2 !important;
+    }
+
+    .course-card .timeline-division {
+        display: none;
+    }
+    
+    .about-me .personal-info {
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-device-width: 600px) {
+    :root {
+        --icon-width-mult: 20%;
+    }    
 }
