@@ -278,34 +278,49 @@ html ::-webkit-scrollbar-track {
     width: 2vw;
     background-color: rgba(236,236,255);
     margin: auto auto auto 0vw;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     border-radius: 0px 15px 15px 0px;
     min-width: 25px;
+    grid-template-columns: 1fr;
 }
 .professional-xp .companies .company-icon {
     height: calc(30vh / 4);
     width: 2vw;
     background-color: rgba(236,236,255);
-    margin: auto auto auto 0vw;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: auto auto auto;
     border-radius: 0px 15px 15px 0px;
 }
 
 .professional-xp .companies .companies-menu .company-icon {
-    z-index: 999;
     display: flex;
     align-items: center;
     flex-direction: row;
     border-radius: 0px 15px 15px 0px;
+    margin: auto;
 }
+
+.professional-xp .companies .companies-menu .company-icon img {
+    animation: fadeIn .5s;
+    height: 30px;
+    margin: auto;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
 
 .professional-xp .companies .companies-menu .company-icon:hover {
     background-color: var(--title-font-color);
-    transition: .3s;
+    transition: .5s;
+    position: relative;
+    z-index: 1000;
     cursor: pointer;
     width: 80px;
+}
+
+.professional-xp .companies .companies-menu .company-icon:hover ~  .professional-xp .companies .companies-menu .company-icon img{
+    height: auto;
 }
 
 .professional-xp .companies .companies-menu .company-icon .img-empresa {
