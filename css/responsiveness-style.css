@@ -139,4 +139,18 @@
     .projects-buttons button {
         margin-bottom: 1.5vh;
     }
+
+    .courses .course-description p {
+        font-size: 0.9rem !important;
+        line-height: 2rem;
+    }
+
+    .courses .course-title p {
+        font-size: 1.1rem !important; 
+    }
+
+    .course-detail p:nth-child(3) {
+        /* Estilos para o segundo elemento p dentro de .course-detail */
+        text-align: center;
+      }
 }
