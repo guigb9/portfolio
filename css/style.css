@@ -211,6 +211,15 @@ html ::-webkit-scrollbar-track {
 .courses {
     width: calc(80% - 5px);
     margin: auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.courses .course-description {
+    overflow: auto;
+    height: 80%;
 }
 
 .courses .course-description, .professional-xp .companies .company-sec .info p  {
