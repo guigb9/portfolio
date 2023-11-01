@@ -78,12 +78,58 @@
 
     .home-style {
         display: grid;
-        grid-template-rows: 1fr 1fr !important;
+        grid-template-rows: 2fr 1fr !important;
     }
 
     .home-style .presentation {
         height: 80%;
         margin-top: 20vh;
     }
+
+    .home-style .presentation .presentation-slogan p:nth-child(2)::before {
+        content: "Guilherme Barboza" !important;
+    }
+
+    .home-style .presentation .presentation-slogan p {
+        margin: 2vh 0;
+    }
+
     
+    
+}
+
+
+@media only screen and (max-device-width: 600px) {
+    .projects-buttons {
+        justify-content: space-around !important;
+        flex-wrap: wrap;
+    }
+
+
+    .projects-buttons button {
+        width: 45% !important;
+        height: fit-content;
+        min-width: 195px !important;
+    }
+
+    .projects-buttons button a {
+        font-size: 1rem !important;
+    }
+
+    .projects .projects-buttons {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-device-width: 570px) {
+    .projects-buttons {
+        justify-content: flex-start !important;
+        flex-wrap: wrap;
+    }
+
+    .projects-buttons button {
+        margin-bottom: 1.5vh;
+    }
 }

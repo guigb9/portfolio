@@ -77,6 +77,12 @@ html ::-webkit-scrollbar-track {
     color: var(--title-font-color);
     font-family: var(--title-font);
     font-size: var(--bigger-font-size);
+    line-height: 5vh;
+    height: fit-content;
+    border-left: 5px solid transparent;
+    border-image: linear-gradient(0deg, rgba(236,236,255,1) 0%, rgba(93,90,232,1) 100%);
+    border-image-slice: 1;
+    padding: 10px;
 }
 
 .presentation .presentation-slogan span {
@@ -86,6 +92,10 @@ html ::-webkit-scrollbar-track {
 
 .projects {
     margin-left: 10%;
+}
+
+.home-style .presentation .presentation-slogan p:nth-child(2)::before {
+    content: "Guilherme Gomes Barboza";
 }
 
 .home-style .menu ul {
@@ -137,14 +147,6 @@ html ::-webkit-scrollbar-track {
     width: 100%;
     height: 10px;
     background-color: var(--main-website-color);
-}
-
-.line {
-    background: rgb(236,236,255);
-    background: var(--default-gradient);
-    height: 23vh;
-    margin-right: 1.5vw;
-    width: 5px;
 }
 
 .training {
