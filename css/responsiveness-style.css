@@ -78,7 +78,7 @@
 
     .home-style {
         display: grid;
-        grid-template-rows: 2fr 1fr !important;
+        grid-template-rows: 2fr 1fr 0.5fr !important;
     }
 
     .home-style .presentation {
