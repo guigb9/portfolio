@@ -141,12 +141,12 @@
     }
 
     .courses .course-description p {
-        font-size: 0.9rem !important;
+        font-size: 0.9rem;
         line-height: 2rem;
     }
 
     .courses .course-title p {
-        font-size: 1.1rem !important; 
+        font-size: 1.1rem; 
     }
 
     .course-detail p:nth-child(3) {

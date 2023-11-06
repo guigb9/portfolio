@@ -50,9 +50,7 @@ function changeCourse(targetCourse) {
 
 trainingButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-        console.log('chegou aqui')
         let newCourseId = btn.getAttribute('course-id');
-        console.log(newCourseId);
         if(+newCourseId === +targetCourseId) {
             return;
         }
@@ -64,14 +62,19 @@ trainingButtons.forEach((btn) => {
 })
 
 function setContentTransitioned(content, objectToSet) {
+    objectToSet.style.opacity = 0;
+
+    function transitionEndHandler() {
+        objectToSet.innerHTML = content;
+        objectToSet.style.opacity = 1;
+        objectToSet.removeEventListener('transitionend', transitionEndHandler);
+    }
+
+    objectToSet.addEventListener('transitionend', transitionEndHandler);
     objectToSet.style.transition = 'opacity 0.5s ease-in-out';
     objectToSet.style.opacity = 0;
-    setTimeout(function() {
-            objectToSet.innerHTML = content;
-            objectToSet.style.opacity = 1;
-    }, 400);
-
 }
+
 
 const companies = [
     {
